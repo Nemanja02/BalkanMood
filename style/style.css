@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+	--background: #BDD4DE;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: unset;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background: var(--background);
+	font-family: Roboto, Sans;
+}
+
+.clear {
+	clear: both;
+}
+
+.wrapper {
+	width: 1020px;
+	margin: 0 auto;
+}
+
+nav {
+	width: 100%;
+	background: #fff;
+	border-bottom: 5px solid #dedede;
+	margin-bottom: 50px;
+}
+
+nav section.top {
+	padding: 20px 20px 5px 20px;
+}
+
+nav section.top .logo {
+	float: left;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+nav section.top input {
+	float: right;
+	width: 200px;
+	height: 2.7em;
+	padding: 5px;
+	outline: none;
+	border: 2px solid #dedede;
+}
+
+nav section.top button {
+	background: none;
+	border:none;
+	outline: none;
+	float: right;
+	margin-left: 10px;
+	transition: background .2s ease;
+	padding: 5px;
+}
+
+nav section.top button:hover {
+	background: #dedede;
+}
+
+nav section.bottom li {
+	float: left;
+	padding: 20px 20px;
+	font-size: 1.2em;
+	margin-top:5px;
+	transition: background .3s ease;
+}
+
+nav section.bottom li:hover {
+	background: #efefef;
+}
+
+nav section.bottom .username {
+	float: right;
+	font-size: 1.2em;
+	padding: 20px 20px;
+}
+
+nav section.bottom img {
+	width: 2.5em;
+	height: 2.5em;
+	border-radius: 50%;
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+main {
+	margin-bottom: 50px;
+}
+
+.container {
+	width: 100%;
+	background: #fff;
+	border-bottom: 5px solid #dedede;
+	padding: 20px;
+}
+
+.tag {
+	background: #F0706A;
+	border-bottom: 5px solid #bb5d59;
+	padding: 10px 20px;
+	color: white;
+	display: inline-block;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+
+.box {
+	background: #efefef;
+	overflow: hidden;
+	position: relative;
+}
+
+.box img {
+	transition: transform .2s ease;
+}
+
+.box:hover img {
+	transform: scale(1.1);
+}
+
+.box:hover .overlay-content {
+	bottom:-10px;
+}
+
+.box:nth-child(1):hover .overlay-content {
+	bottom:0;
+}
+
+.overlay {
+	background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+.box .overlay-content {
+	position: absolute;
+	bottom: -60px;
+	color: #fff;
+	padding: 20px 20px;
+	font-size: 0.9em;
+	transition: bottom .2s ease;
+}
+
+.box:nth-child(1) .overlay-content {
+	position: absolute;
+	bottom: -50px;
+	color: #fff;
+	padding: 20px 20px;
+	transition: bottom .2s ease;
+}
+
+.grid-l-mm .box {
+	height: calc(150px - (20px / 2));
+	width: 460px;
+	float: right;
+	margin-bottom: 20px;
+	position: relative;
+	border-bottom: 5px solid #dedede;
+}
+
+.grid-l-mm .box:not(:nth-child(1)) .title {
+	width: 260px;
+	padding: 10px;
+	float: left;
+	color: black;
+	font-size: 1.3em;
+}
+
+.overlay-content .title {
+	font-size: 1.7em;
+	margin-bottom: 20px;
+	float: none;
+	color: white;
+}
+
+.overlay-content i {
+	font-size: 1.2em;
+}
+
+.grid-l-mm .box .image-wrapper img {
+	height: 100%;
+	width: 100%;
+}
+
+.grid-mmm .box .image-wrapper img {
+	width: 115%;
+}
+
+.grid-mmm .box:nth-child(3n) {
+	margin-right: 0;
+}
+
+.grid-l-mm .box .image-wrapper {
+	height: 100%;
+	width: 150px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+}
+.grid-mmm {
+	width: 100%;
+	height: auto;
+}
+
+.grid-l-mm .box:nth-child(1) {
+	height: 300px;
+	width: 500px;
+	float: left;
+	border:none;
+}
+
+.grid-l-mm .box:nth-child(1) img {
+	width: 100%;
+	height: 100%;
+}
+
+.grid-mmm .box {
+	width: calc(100% / 3 - 14px);
+	height: 200px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.grid-mmm .box .overlay-content {
+	bottom: -50px;
+}
+
+.grid-mmm .box:nth-last-child(1) {
+	margin-right: 0;
+}
+
+.grid-mmm .box:hover .overlay-content {
+	bottom:0;
+}
+
+.grid-mmm .box img {
+	width: 100%;
+	height: 100%;
+}
+
+.not-found {
+	width: 100%;
+	padding: 200px 0;
+	text-align: center;
+
+}
+
+.not-found h1 {
+	font-size: 6em;
+}
+
+.not-found .button {
+	font-size: 2em;
+	padding: 10px 20px;
+	border: 3px solid #bb5d59;
+	display: inline-block;
+	color: #bb5d59;
+	margin-top: 50px;
+	transition: all .1s ease;
+}
+
+.not-found .button:hover {
+	background: #bb5d59;
+	color: white;
+}
+

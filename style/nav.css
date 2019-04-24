@@ -1,0 +1,104 @@
+nav * {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	list-style: none;
+}
+
+nav a {
+	color: unset;
+}
+
+.clear {
+	clear: both;
+}
+
+.wrapper {
+	width: 1020px;
+	margin: 0 auto;
+}
+
+nav {
+	width: 100%;
+	background: #fff;
+	border-bottom: 5px solid #dedede;
+	margin-bottom: 50px;
+	font-family: Roboto, Sans;
+}
+
+nav section.top {
+	padding: 20px 20px 0px 20px;
+}
+
+nav section.top .logo {
+	float: left;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+/*nav section.top input {
+	float: right;
+	width: 200px;
+	height: 2.7em;
+	padding: 5px;
+	outline: none;
+	border: 2px solid #dedede;
+}*/
+
+nav section.top button {
+	background: none;
+	border:none;
+	outline: none;
+	float: right;
+	margin-left: 10px;
+	transition: background .2s ease;
+	padding: 5px;
+}
+
+nav section.top button:hover {
+	background: #dedede;
+}
+
+nav section.bottom li {
+	float: left;
+	padding: 20px 20px;
+	font-size: 1.2em;
+	margin-top:5px;
+	transition: background .3s ease;
+}
+
+nav section.bottom li:hover {
+	background: #efefef;
+}
+
+nav section.bottom .username {
+	float: right;
+	font-size: 1.2em;
+	padding: 20px 20px;
+}
+
+nav section.bottom img {
+	width: 2.5em;
+	height: 2.5em;
+	border-radius: 50%;
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+.error-message {
+	background: #F0706A;
+	border-bottom: 5px solid #bb5d59;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 50px;
+	color: #a70700;
+	font-weight: bold;
+	opacity: 0.8;
+	font-size: 1.2em;
+	display: none;
+}
